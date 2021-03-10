@@ -1,0 +1,99 @@
+
+@import "../bootstrap/scss/bootstrap.scss";   
+@import "../scss/variables";   
+@import "../scss/marketing-message";   
+@import "../scss/sliders";   
+@import "../scss/tabs";   
+
+html{
+   overflow-x: hidden;
+}
+.myContainer{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.site-search{
+   margin-left: auto;
+}
+
+input {
+   display: block;
+   width: 100%;
+   margin: 20px 0 10px 0;
+   font-size: 17px;
+   padding: 10px;
+   border: 2px solid #d8d8d8;
+   border-radius: 8px;
+}
+
+
+.header{
+   //padding: 0px 30px 0px 30px; 
+   background-color: $primary;
+   img{
+      height: 50px;
+      width: 200px;
+   }
+   .navlist{
+      padding-right: 15px;
+   }
+   .nav-item{
+      .nav-button {
+         flex-grow: 1;
+         font-size: 18px;
+         white-space: nowrap;
+         padding: .8em 1.5em;
+         font-family: Open Sans, Helvetica, Arial, sans-serif;
+         line-height: 18px;
+         display: inline-block;
+         color: black;
+         background-color: $primary;
+         text-align: center;
+         position: relative;
+
+      }
+      :hover{
+         background-color: darken($primary, 10%)!important;
+      }
+   
+   }
+}
+
+.save-btn {
+   box-sizing: border-box;
+   appearance: none;
+   background-color: $green;
+   border: 2px solid $green;
+   border-radius: 0.6em;
+   color: $white;
+   cursor: pointer;
+   display: flex;
+   align-self: center;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1;
+   margin: 20px;
+   padding: 1em 2.6em;
+   text-decoration: none;
+   text-align: center;
+   text-transform: uppercase;
+   font-family: 'Montserrat', sans-serif;
+   width: fit-content;
+ 
+   &:hover,
+   &:focus {
+     color: $green;
+     background-color: transparent;
+
+     outline: 0;
+   }
+ }
+
+
+
+.right{
+   float: right;
+}
+
+  
