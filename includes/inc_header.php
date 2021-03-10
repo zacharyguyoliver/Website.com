@@ -1,6 +1,6 @@
 <header>
     <?php
-    include_once(DOCUMENT_ROOT . '/includes/inc_pg-top.php')
+    include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/inc_pg-top.php')
 
     ?>
     <div class="header row align-items-center">

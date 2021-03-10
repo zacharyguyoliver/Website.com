@@ -1,12 +1,12 @@
 <html>
 <?php
-    include_once(__DIR__ . '/library/config.php');
+    include_once($_SERVER['DOCUMENT_ROOT'] . '/library/config.php');
     
 ?>
 <body>
     <?php 
-        include_once(DOCUMENT_ROOT . '/includes/inc_header.php'); 
-        include_once(DOCUMENT_ROOT . '/modules/marketing-message/marketing-message.php'); 
+        include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/inc_header.php'); 
+        include_once($_SERVER['DOCUMENT_ROOT'] . '/modules/marketing-message/marketing-message.php'); 
         echo(json_encode([['title'=>'page','slug'=>'/page','content'=>'content'],['title'=>'page','slug'=>'/page','content'=>'content']]));
     ?>
     

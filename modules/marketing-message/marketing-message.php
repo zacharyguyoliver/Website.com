@@ -1,6 +1,6 @@
 <!-- <div class="slider">
     <div class="arrow-left"> < </div>
-    <div class="slide" style="background-image: url(/site/modules/marketing-message/images/pups.jpg);background-size: cover;">
+    <div class="slide" style="background-image: url(/modules/marketing-message/images/pups.jpg);background-size: cover;">
         <h2>
             Puppies
         </h2>
@@ -15,7 +15,7 @@
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides" style="background-image: url(/site/modules/marketing-message/images/pups.jpg);background-size: cover;">
+  <div class="mySlides" style="background-image: url(/modules/marketing-message/images/pups.jpg);background-size: cover;">
     <div class="numbertext">1 / 3</div>
     <div class="text">
       <h1>Puppies!</h1>
@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  <div class="mySlides" style="background-image: url(/site/modules/marketing-message/images/raccoon.jpg);background-size: cover;">
+  <div class="mySlides" style="background-image: url(/modules/marketing-message/images/raccoon.jpg);background-size: cover;">
     <div class="numbertext">2 / 3</div>
     <div class="text">
       <h1>Raccoon!</h1>
@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  <div class="mySlides" style="background-image: url(/site/modules/marketing-message/images/ferret.jpg);background-size: cover;">
+  <div class="mySlides" style="background-image: url(/modules/marketing-message/images/ferret.jpg);background-size: cover;">
     <div class="numbertext">3 / 3</div>
     <div class="text">
       <h1>Ferret!</h1>
@@ -51,4 +51,4 @@
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-<script type="text/javascript" src="/site/modules/marketing-message/js/marketing-message.js"></script>
+<script type="text/javascript" src="/modules/marketing-message/js/marketing-message.js"></script>
