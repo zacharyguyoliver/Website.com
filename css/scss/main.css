@@ -10891,12 +10891,15 @@ ul.tabs li.active {
 
 .tab_container {
   border: 1px solid #333;
-  border-top: none;
   clear: both;
   float: left;
   width: 100%;
   background: #fff;
   overflow: auto;
+}
+
+.tab_container h2 {
+  text-align: center;
 }
 
 .tab_content {
@@ -10949,10 +10952,18 @@ input {
   display: block;
   width: 100%;
   margin: 20px 0 10px 0;
+  margin-top: 0;
   font-size: 17px;
   padding: 10px;
   border: 2px solid #d8d8d8;
   border-radius: 8px;
+}
+
+label {
+  margin-top: 20px;
+  padding-left: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
 }
 
 .header {
@@ -11022,6 +11033,46 @@ input {
   color: #28a745;
   background-color: transparent;
   outline: 0;
+}
+
+.add-new-btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 0.6em;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1em 2.6em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.add-new-btn:hover, .add-new-btn:focus {
+  color: #007bff;
+  background-color: transparent;
+  outline: 0;
+}
+
+.setting {
+  border-bottom: 2px solid black;
 }
 
 .right {

@@ -37,30 +37,32 @@
 	   of last tab */
 	$('ul.tabs li').last().addClass("tab_last");
 
+
+//build json to be sent to setting processing file in /library by ajax
 $('.save-btn').on('click',function(){
-    var file = $(this).data('file');
-    var tabId = $(this).closest('.settingGroup').attr('id');
-    var tabSettings = $('#' + tabId + ' .setting');
-    for(var i = 0; i<tabSettings.length; i++){
-        var settings = tabSettings[i];
-        
-        console.log(settings);
+    var settingsArray = {};
+    var fileName = '';
+    var curKey = ''
+    var form = $(this).closest('form').attr('id');
 
-    }
+    $('#'+form +' input').each(function(){
+        if($(this).hasClass('settingsBlock')){
+            curKey = $(this).val();
+            settingsArray[curKey] = {};
+        } else if($(this).attr('id') == 'hidFileName'){
+            fileName = $(this).val();
+        }else{
+            settingsArray[curKey][$(this).attr('name')] = $(this).val();
+        }
+    });
+    $.ajax({
+        type: "POST",
+        url: "/library/settings-processor.php",
+        data: {fileName: fileName, settings: JSON.stringify(settingsArray)},
+        dataType: "JSON"
+  });
 
-        //$('.setting input').each(function(){
-            //console.log($(this).data('key'));
-            //console.log($(this).val());
-            //.log('-----------------');
-        //});
-   // });
-    // $.ajax({
-    //     type:'POST',
-    //     url:'',
-    //     data:{
-    //         file:'',
-    //         settings,
-    //     }
-    // })
-})
+});
+
+
 	

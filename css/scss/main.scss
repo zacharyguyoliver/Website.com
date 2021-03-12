@@ -21,12 +21,19 @@ input {
    display: block;
    width: 100%;
    margin: 20px 0 10px 0;
+   margin-top: 0;
    font-size: 17px;
    padding: 10px;
    border: 2px solid #d8d8d8;
    border-radius: 8px;
 }
 
+label{
+   margin-top: 20px;
+   padding-left: 10px;
+   font-family: sans-serif;
+   font-size: 18px;
+}
 
 .header{
    //padding: 0px 30px 0px 30px; 
@@ -90,8 +97,40 @@ input {
    }
  }
 
+.add-new-btn {
+   box-sizing: border-box;
+   appearance: none;
+   background-color: $blue;
+   border: 2px solid $blue;
+   border-radius: 0.6em;
+   color: $white;
+   cursor: pointer;
+   display: flex;
+   align-self: center;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1;
+   margin: 20px;
+   padding: 1em 2.6em;
+   text-decoration: none;
+   text-align: center;
+   text-transform: uppercase;
+   font-family: 'Montserrat', sans-serif;
+   width: fit-content;
+
+   &:hover,
+   &:focus {
+      color: $blue;
+      background-color: transparent;
+
+      outline: 0;
+}
+}
 
 
+.setting{
+   border-bottom: 2px solid black;
+}
 .right{
    float: right;
 }

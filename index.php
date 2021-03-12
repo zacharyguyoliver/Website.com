@@ -1,13 +1,13 @@
 <html>
 <?php
-    include_once($_SERVER['DOCUMENT_ROOT'] . '/library/config.php');
+    include_once($_SERVER['DOCUMENT_ROOT'] . '/library/functions.php');    
     
 ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <body>
     <?php 
         include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/inc_header.php'); 
         include_once($_SERVER['DOCUMENT_ROOT'] . '/modules/marketing-message/marketing-message.php'); 
-        echo(json_encode([['title'=>'page','slug'=>'/page','content'=>'content'],['title'=>'page','slug'=>'/page','content'=>'content']]));
     ?>
     
     <div class="myContainer">

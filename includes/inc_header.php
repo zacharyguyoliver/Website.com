@@ -14,10 +14,12 @@
             </div>
             <div class="col-12">
                 <div class="row right navlist">
-                    <div class="nav-item"><a class="nav-button" href="#">page 1</a></div>
-                    <div class="nav-item"><a class="nav-button" href="#">page 2</a></div>
-                    <div class="nav-item"><a class="nav-button" href="#">page 3 this is a long name</a></div>
-                    <div class="nav-item"><a class="nav-button" href="#">page 4</a></div>
+                    <?php
+                        $pages = loadSettings('pages.json');
+                        foreach($pages as $page){
+                            echo("<div class='nav-item'><a class='nav-button' href='#'>$page->title</a></div>");
+                        }
+                    ?>
                 </div>
 
             </div>
